@@ -274,6 +274,19 @@ footer h2 {
   border-radius: 6px;
 }
 
+.sub-container input:invalid {
+  border: 1px solid var(--light-red);
+}
+
+.sub-container .check {
+  display: none;
+}
+
+.sub-container input:invalid + .check {
+  display: block;
+  color: var(--light-red);
+}
+
 .newsletter .btn {
   align-self: end;
   font-size: var(--fs-3);
